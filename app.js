@@ -32,4 +32,9 @@ function validParentheses(s) {
     return stack.length ? false : true;
 }
 
+console.log(validParentheses("()[]{}"))
+console.log(validParentheses("(]"))
+console.log(validParentheses("([)]"))
+console.log(validParentheses("({})"))
+
 //Merge Two Sorted Lists
