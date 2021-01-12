@@ -11,6 +11,8 @@ function longestCommonPrefix(strings) {
     }
     return prefix;
 }
+
+console.log(longestCommonPrefix(["floor", "flood", "flower"]))
 //Valid Parentheses
 
 //Merge Two Sorted Lists
