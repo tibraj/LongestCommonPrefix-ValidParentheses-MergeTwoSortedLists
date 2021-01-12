@@ -13,6 +13,23 @@ function longestCommonPrefix(strings) {
 }
 
 console.log(longestCommonPrefix(["floor", "flood", "flower"]))
+
 //Valid Parentheses
+function validParentheses(s) {
+    let parentheses = {
+        ")" : "(",
+        "}" : "{",
+        "]" : "["
+    }
+    let stack = [];
+    for(let i = 0; i < s.length; i++) {
+        if(s[i] === "(" || s[i] === "{" || s[i] === "[") {
+            stack.push(s[i]);
+        } else if(stack[stack.length - 1] === parentheses[s[i]]) {
+            stack.pop();
+        } else return false;
+    }
+    return stack.length ? false : true;
+}
 
 //Merge Two Sorted Lists
